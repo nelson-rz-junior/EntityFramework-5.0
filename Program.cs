@@ -53,7 +53,7 @@ namespace EntityFramework5
 
             foreach (var book in books)
             {
-                WriteLine($"Id: {book.Id}, Title: {book.Title}, Author: {book.Author.Name}");
+                WriteLine($"Id: {book.Id} | Title: {book.Title} | Author: {book.Author.Name}");
             }
 
             ReadKey();

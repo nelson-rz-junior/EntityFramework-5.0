@@ -11,15 +11,15 @@ namespace EntityFramework5.Data.Mappings
             builder.ToTable("Author");
 
             builder.Property(a => a.Name)
-                .HasColumnType("varchar(100)")
+                .HasColumnType("varchar(200)")
                 .IsRequired();
 
             builder.HasData(
-                new Author { Id = 1, Name = "Eric Evans" },
-                new Author { Id = 2, Name = "Robert C. Martin" },
-                new Author { Id = 3, Name = "Vaughn Vernon" },
-                new Author { Id = 4, Name = "Scott Millet" },
-                new Author { Id = 5, Name = "Martin Fowler" }
+                new Author { Id = 1, Name = "Andrew Stellman and Jennifer Greene" },
+                new Author { Id = 2, Name = "Valerio De Sanctis" },
+                new Author { Id = 3, Name = "Sean Burns" },
+                new Author { Id = 4, Name = "Andrew Troelsen and Phillip Japikse" },
+                new Author { Id = 5, Name = "Christian Nagel" }
             );
         }
     }

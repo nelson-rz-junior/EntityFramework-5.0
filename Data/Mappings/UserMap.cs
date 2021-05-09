@@ -11,7 +11,7 @@ namespace EntityFramework5.Data.Mappings
             builder.ToTable("User");
 
             builder.Property(u => u.Name)
-                .HasColumnType("varchar(100)")
+                .HasColumnType("varchar(200)")
                 .IsRequired();
 
             builder.HasMany(g => g.Groups)
